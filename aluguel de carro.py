@@ -11,25 +11,25 @@ def main():
 
     marca = input('Digite a marca (BMW, Audi, Fiat ou Ford): \n')
 
-    if marca in marca_carros[0]:
+    if marca == marca_carros[0]:
         dias = float(input('Por quantos dias o BMW foi usado? \n'))
 
         km = float(input('Quantos quilômetros a BMW rodou? \n'))
 
         print('O valor a ser pago é de R$', dias * valor_dia_BMW + km * valor_km_rodado)
-    elif marca in marca_carros[1]:
+    elif marca == marca_carros[1]:
         dias = float(input('Por quantos dias o Audi foi usado? \n'))
         
         km = float(input('Quantos quilômetros o Audi rodou? \n'))
 
         print('O valor a ser pago é de R$', dias * valor_dia_Audi + km * valor_km_rodado)
-    elif marca in marca_carros[2]:
+    elif marca == marca_carros[2]:
         dias = float(input('Por quantos dias o Fiat foi usado? \n'))
 
         km = float(input('Quantos quilômetros o Fiat rodou? \n'))
 
         print('O valor a ser pago é de R$', dias * valor_dia_Fiat + km * valor_km_rodado)
-    elif marca in marca_carros[3]:
+    elif marca == marca_carros[3]:
         dias = float(input('Por quantos dias o Ford foi usado? \n'))
 
         km = float(input('Quantos quilômetros o Ford rodou? \n'))
