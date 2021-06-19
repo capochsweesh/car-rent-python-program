@@ -1,8 +1,9 @@
 def main():
 
-
+    #lista de marca de carros
     marca_carros = ["BMW", "Audi", "Fiat", "Ford"]
 
+    #valores de carros/ valor fixo de kms rodados
     valor_dia_BMW = 100
     valor_dia_Audi = 120
     valor_dia_Fiat = 70
@@ -10,7 +11,8 @@ def main():
     valor_km_rodado = 0.60
 
     marca = input('Digite a marca (BMW, Audi, Fiat ou Ford): \n')
-
+    
+    #sistema de cálculo ===================================================================================================================================
     if marca == marca_carros[0]:
         dias = float(input('Por quantos dias o BMW foi usado? \n'))
 
@@ -37,7 +39,7 @@ def main():
         print('O valor a ser pago é de R$', dias * valor_dia_Ford + km * valor_km_rodado)
     else:
         print('Por favor digite uma das marcas citadas acima.')
-
+    ========================================================================================================================================================
 
 
 if __name__ == "__main__":
